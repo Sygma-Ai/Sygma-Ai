@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SosAi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="" type="image/x-icon">
+  </head>
+  <style>
+    body { text-align: center; }
+    p { width: 90%; }
+  </style>
+
+  <body>
+
+    <ul class="breadcrumb">
+      <a class="bread_crumb" href="index.html">Sos Auto</a> / Check-auto
+    </ul>
+
+    <h1> Car Damage Assessment </h1>
+
+    <div class="section_content" style="font-size: 1em; padding: 0;">
+      <p>
+        In Car Insurance industry, a lot of money is being wasted on Claims leakage. Claims leakage is the gap between the optimal and actual settlement of a claim. Visual inspection and validation are being used to reduce claims leakage. But doing inspection might take a long time and result in delaying of claims processing. An automated system 
+        for doing inspection and validation will be of great help in speeding up the process.
+        :)
+      </p>
+      <p>
+        The detector is based on <a href="https://openaccess.thecvf.com/content_iccv_2017/html/He_Mask_R-CNN_ICCV_2017_paper.html" class="intext">YOLOv3</a>
+        and was trained on a large dataset of annotated images called
+        <a href="https://cocodataset.org" class="intext">COCO</a>.
+      </p>
+      <p style="padding: 0;">
+        To reduce Claims leakage during Insurance processing. Visual inspection
+        and validation are being done. As this takes a long time because the person needs to come and inspect the damage. We are trying to automate this procedure. Using this automation will result in Claims processing faster.
+      </p>
+      <p>
+        <i>Please note that the results are saved on the server and inspected later on.</i>
+      </p>
+
+      <hr style="margin: 1em;">
+      <div style="margin: 1em;">
+        <div id="examples_text" class="examples_text">
+          Try examples:
+          a <li id="example_1" class="example">example_1</li>,
+          a <li id="example_2" class="example">example_2</li>,
+          a <li id="example_3" class="example">example_3</li>,
+          and <li id="example_4" class="example">example_5</li>
+          <br> or
+        </div>
+        <label id="upload" for="file-input" class="btn upload" style="margin-top: 1em;"> Upload Your Image </label>
+        <input id="file-input" type="file" accept="image/*">
+        <button id="detect" class="btn detect hide"> Detect </button>
+        <button id="reload" class="btn reload hide" onclick="reload()"> Reset ↻ </button>
+      </div>
+    </div>
+    <div class="preview"> </div>
+
+    <footer class="version">
+      SosAI, 2021 (<span id="status"></span>)
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+    <script src="js/upload_handler.js"></script>
+    <script src="js/status_checker.js"></script>
+  </body>
+</html>
