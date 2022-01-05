@@ -9,6 +9,6 @@ $.ajax({
    document.getElementById('status').innerHTML = "<span id='status_ok'>online</span>";
  },
  error: function() {
-   document.getElementById('status').innerHTML = "<span id='status_down' alt='down'>offline</span>";
+   document.getElementById('status').innerHTML = "<span id='status_down' alt='down'>website under maintenance</span>";
  }
 });
