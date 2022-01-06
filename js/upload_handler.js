@@ -1,4 +1,4 @@
-var SERVER_URL = 'https://sosai.ml:5000/';
+var SERVER_URL = '';
 var MAX_SIDE_LEN = 1280;
 
 upload = document.querySelector('#file-input');
