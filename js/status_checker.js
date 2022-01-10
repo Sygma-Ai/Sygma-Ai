@@ -1,4 +1,4 @@
-var STATUS_CHECK_URL = '';
+var STATUS_CHECK_URL = 'https://sosai.ml:5000/';
 
 document.getElementById('status').innerHTML = "<span id='status_connecting' alt='down'>connecting...</span>";
 
