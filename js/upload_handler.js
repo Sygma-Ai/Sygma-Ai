@@ -108,7 +108,7 @@ function send_detect_show() {
     type: 'POST',
     url: SERVER_URL,
     data: form_data,
-    timeout: 1000 * 25, 
+    timeout: 1000 * 250, 
     contentType: false,
     processData: false,
     dataType: 'json',
